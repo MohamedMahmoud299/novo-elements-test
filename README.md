@@ -1,3 +1,12 @@
-# angular-ivy-rgn5bk
+# Platform Extension Starter
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-rgn5bk)
+> Starter repository for extensions for Bullhorn 2017
+
+* MASTER BRANCH == static version
+* FULLSTACK == full stack version (STILL TODO)
+
+## Getting Started
+
+* Clone This
+* `npm install` or `yarn install`
+* `npm start`

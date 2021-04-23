@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "hint";
+@import "~novo-elements/novo-elements";
+body {
+  background-color: #ffffff;
+}
+
+.dropdown-container.data-table-dropdown {
+  min-width: 300px !important;
+  max-width: 300px !important;
+
+  .dropdown-list-filter {
+    .filter-search {
+      .bhi-search {
+        left: 260px !important;
+      }
+    }
+  }
+}

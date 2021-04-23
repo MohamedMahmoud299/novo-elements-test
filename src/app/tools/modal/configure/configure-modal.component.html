@@ -1,0 +1,27 @@
+<novo-modal>
+  <header title="Configure Columns"
+          theme="contact">
+    <utils>
+      <util-action icon="times"
+                  (click)="close()"></util-action>
+    </utils>
+  </header>
+  <section>
+    <novo-list direction="vertical">
+      <novo-list-item *ngFor="let column of columns">
+        <item-header>
+              <item-title>{{ column.label }}</item-title>
+              <item-header-end>
+                <novo-checkbox [(ngModel)]="column.enabled"></novo-checkbox>
+              </item-header-end>
+          </item-header>
+      </novo-list-item>
+    </novo-list>
+  </section>
+  <button theme="standard"
+          (click)="close()">Cancel</button>
+  <button theme="primary"
+          color="success"
+          icon="check"
+          (click)="save()">Save</button>
+</novo-modal>
