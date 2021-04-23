@@ -11,6 +11,8 @@ import {AppBridgeService} from './tools/service/app-bridge.service';
 import {SettingsService} from './tools/service/settings/settings.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { TestElementsComponent } from './test-elements/test-elements.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full' }
@@ -20,12 +22,13 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    TestElementsComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(routes, { useHash: true }),
+    AppRoutingModule,
     HttpClientModule,
     NovoElementsModule,
     NovoElementProviders.forRoot()
